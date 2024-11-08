@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@100..900&display=swap');
+    </style>
+    <script>
+        function toggleMenu() {
+            const navMenu = document.querySelector('.nav-menu');
+            navMenu.classList.toggle('show');
+        }
+    </script>
+    
+</head>
+
+<body>
+
+    <header class="header">
+        <nav class="nav-container">
+            <div class="nav-left">
+                <a href="#" class="logo">Logo</a>
+                <!-- Hamburger Menu Icon -->
+                <button class="hamburger" onclick="toggleMenu()">&#9776;</button>
+                <div class="nav-menu">
+                    <a href="#" class="nav-link">Home</a>
+                    <a href="#" class="nav-link">Signed Deals</a>
+                    <a href="#" class="nav-link active">Deal Information</a>
+                    <a href="#" class="nav-link">Dashboards</a>
+                    <a href="#" class="nav-link">Contacts</a>
+                    <a href="#" class="nav-link">All News</a>
+                    <a href="#" class="nav-link">Marketplace</a>
+                    <a href="#" class="nav-link">Admin</a>
+                </div>
+            </div>
+            <div class="nav-right">
+                <button class="submit-button">Submit Your Ideas!</button>
+                <img src="./R (1).png" alt="user icon" class="user-avatar">
+            </div>
+        </nav>
+    </header>
+    
+
+
+    <div class="container">
+        <br>
+        <h1 class="page-title">Deal Information</h1>
+        <div class="tabs">
+            <a href="#" class="tab">WRDM Funding Sources</a>
+            <a href="#" class="tab">Deal Process</a>
+            <a href="#" class="tab">Governance</a>
+            <a href="#" class="tab">Areas of Interest</a>
+            <a href="#" class="tab active">What to do if...</a>
+        </div>
+        <h2>What to do if...</h2>
+        <p class="description">Select the topic below to see what you should do in each scenario</p>
+        <div class="accordion">
+
+            <div class="accordion-item">
+                <input type="checkbox" id="accordion-1" class="accordion-toggle">
+                <label for="accordion-1" class="accordion-header">
+                    ...You are at a meeting and find a potential WRD external opportunity of interest
+                </label>
+                <div class="accordion-content">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis possimus accusantium magni
+                    explicabo non eos numquam itaque tempore dignissimos nisi aut necessitatibus ducimus rem saepe,
+                    dolore quos praesentium labore at quasi? Voluptatibus ex odit tempore libero nihil? Corporis quod
+                    iure atque neque. Est ipsum autem quo eum provident soluta ipsam.
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <input type="checkbox" id="accordion-2" class="accordion-toggle">
+                <label for="accordion-2" class="accordion-header">
+                    ...You want to know WRD's partnering areas of interest
+                </label>
+                <div class="accordion-content">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, asperiores corporis commodi eius
+                    itaque perspiciatis veritatis. Sunt placeat, aliquam blanditiis totam perferendis numquam asperiores
+                    optio odit magni a, nihil nulla quis eveniet? Eius debitis harum vel, suscipit, rem tenetur quasi
+                    sapiente quas aut quod assumenda provident delectus? Aliquam, error perspiciatis!
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <input type="checkbox" id="accordion-3" class="accordion-toggle">
+                <label for="accordion-3" class="accordion-header">
+                    ...you get approached by a non-employee with a potential WRD external opportunity of interest
+                </label>
+                <div class="accordion-content">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet recusandae eum praesentium dicta id
+                    facere accusantium dignissimos quas distinctio tempora nostrum beatae, numquam possimus, minus qui
+                    ut soluta hic fuga expedita odit quae provident quos quasi aut? Soluta, eos obcaecati? Enim itaque
+                    veniam facere rem sunt aperiam nemo minima illo.
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <footer>&copy;2024 i2e Inc. All Rights Reserved</footer>
+</body>
+
+</html>
